@@ -1,0 +1,23 @@
+{
+  "name": "trading-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "dotnet run --project backend/TradingDashboard.Api/TradingDashboard.Api.csproj",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "dotnet build backend/TradingDashboard.sln -c Release",
+    "lint": "npm run lint --workspace=frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
+  }
+}

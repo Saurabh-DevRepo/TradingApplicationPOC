@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TradingDashboard.Api.props" />
+</Project>
